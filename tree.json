@@ -1,0 +1,648 @@
+{
+  "folder_path": "D:\\GitProjects",
+  "tree": {
+    "name": "GitProjects",
+    "type": "directory",
+    "path": "D:\\GitProjects",
+    "children": [
+      {
+        "name": "block-chess",
+        "type": "directory",
+        "path": "D:\\GitProjects\\block-chess",
+        "children": [
+          {
+            "name": "apps",
+            "type": "directory",
+            "path": "D:\\GitProjects\\block-chess\\apps",
+            "children": [
+              {
+                "name": "server",
+                "type": "directory",
+                "path": "D:\\GitProjects\\block-chess\\apps\\server",
+                "children": [
+                  {
+                    "name": "src",
+                    "type": "directory",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\server\\src",
+                    "children": [
+                      {
+                        "name": "bot_template",
+                        "type": "directory",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\bot_template",
+                        "children": [
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\bot_template\\bot_api.h",
+                            "size": 2296
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\bot_template\\example.cpp",
+                            "size": 997
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\bot_template\\harness.cpp",
+                            "size": 5159
+                          }
+                        ]
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\config.ts",
+                        "size": 2985
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\index.ts",
+                        "size": 4709
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\orchestrator.ts",
+                        "size": 2626
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\server\\src\\runner.ts",
+                        "size": 1327
+                      }
+                    ]
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\server\\package.json",
+                    "size": 528
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\server\\tsconfig.json",
+                    "size": 249
+                  }
+                ]
+              },
+              {
+                "name": "web",
+                "type": "directory",
+                "path": "D:\\GitProjects\\block-chess\\apps\\web",
+                "children": [
+                  {
+                    "name": "src",
+                    "type": "directory",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\web\\src",
+                    "children": [
+                      {
+                        "name": "components",
+                        "type": "directory",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components",
+                        "children": [
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components\\Board.vue",
+                            "size": 4436
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components\\BotDocModal.vue",
+                            "size": 3248
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components\\BotPanel.vue",
+                            "size": 12243
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components\\GameRules.vue",
+                            "size": 1715
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components\\Modal.vue",
+                            "size": 1998
+                          },
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\components\\StartScreen.vue",
+                            "size": 2253
+                          }
+                        ]
+                      },
+                      {
+                        "name": "store",
+                        "type": "directory",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\store",
+                        "children": [
+                          {
+                            "type": "file",
+                            "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\store\\game.ts",
+                            "size": 4386
+                          }
+                        ]
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\App.vue",
+                        "size": 6004
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\main.ts",
+                        "size": 201
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\apps\\web\\src\\style.css",
+                        "size": 237
+                      }
+                    ]
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\web\\index.html",
+                    "size": 323
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\web\\package.json",
+                    "size": 540
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\web\\tsconfig.json",
+                    "size": 300
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\apps\\web\\vite.config.ts",
+                    "size": 276
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "packages",
+            "type": "directory",
+            "path": "D:\\GitProjects\\block-chess\\packages",
+            "children": [
+              {
+                "name": "engine",
+                "type": "directory",
+                "path": "D:\\GitProjects\\block-chess\\packages\\engine",
+                "children": [
+                  {
+                    "name": "src",
+                    "type": "directory",
+                    "path": "D:\\GitProjects\\block-chess\\packages\\engine\\src",
+                    "children": [
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\packages\\engine\\src\\engine.ts",
+                        "size": 8838
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\packages\\engine\\src\\index.ts",
+                        "size": 59
+                      },
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\packages\\engine\\src\\types.ts",
+                        "size": 2166
+                      }
+                    ]
+                  },
+                  {
+                    "name": "test",
+                    "type": "directory",
+                    "path": "D:\\GitProjects\\block-chess\\packages\\engine\\test",
+                    "children": [
+                      {
+                        "type": "file",
+                        "path": "D:\\GitProjects\\block-chess\\packages\\engine\\test\\engine.test.ts",
+                        "size": 2629
+                      }
+                    ]
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\packages\\engine\\package.json",
+                    "size": 408
+                  },
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\packages\\engine\\tsconfig.json",
+                    "size": 275
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "samples",
+            "type": "directory",
+            "path": "D:\\GitProjects\\block-chess\\samples",
+            "children": [
+              {
+                "type": "file",
+                "path": "D:\\GitProjects\\block-chess\\samples\\greedy.cpp",
+                "size": 610
+              }
+            ]
+          },
+          {
+            "name": "scripts",
+            "type": "directory",
+            "path": "D:\\GitProjects\\block-chess\\scripts",
+            "children": [
+              {
+                "type": "file",
+                "path": "D:\\GitProjects\\block-chess\\scripts\\e2e-workspace.sh",
+                "size": 1175
+              },
+              {
+                "type": "file",
+                "path": "D:\\GitProjects\\block-chess\\scripts\\probe-bad.cpp",
+                "size": 205
+              }
+            ]
+          },
+          {
+            "name": "worker",
+            "type": "directory",
+            "path": "D:\\GitProjects\\block-chess\\worker",
+            "children": [
+              {
+                "name": "sandbox",
+                "type": "directory",
+                "path": "D:\\GitProjects\\block-chess\\worker\\sandbox",
+                "children": [
+                  {
+                    "type": "file",
+                    "path": "D:\\GitProjects\\block-chess\\worker\\sandbox\\Dockerfile",
+                    "size": 386
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "file",
+            "path": "D:\\GitProjects\\block-chess\\.gitignore",
+            "size": 59
+          },
+          {
+            "type": "file",
+            "path": "D:\\GitProjects\\block-chess\\package-lock.json",
+            "size": 117295
+          },
+          {
+            "type": "file",
+            "path": "D:\\GitProjects\\block-chess\\package.json",
+            "size": 428
+          },
+          {
+            "type": "file",
+            "path": "D:\\GitProjects\\block-chess\\README.md",
+            "size": 3944
+          }
+        ]
+      },
+      {
+        "name": "hello-git",
+        "type": "directory",
+        "path": "D:\\GitProjects\\hello-git",
+        "children": [
+          {
+            "type": "file",
+            "path": "D:\\GitProjects\\hello-git\\hello.py",
+            "size": 37
+          },
+          {
+            "type": "file",
+            "path": "D:\\GitProjects\\hello-git\\test222.txt",
+            "size": 0
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "path": "D:\\GitProjects\\111.txt",
+        "size": 0
+      }
+    ]
+  },
+  "directory_signatures": {
+    "D:\\GitProjects": [
+      {
+        "name": "111.txt",
+        "type": "file",
+        "size": 0
+      },
+      {
+        "name": "block-chess",
+        "type": "directory"
+      },
+      {
+        "name": "hello-git",
+        "type": "directory"
+      }
+    ],
+    "D:\\GitProjects\\block-chess": [
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "size": 59
+      },
+      {
+        "name": "apps",
+        "type": "directory"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "size": 117295
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "size": 428
+      },
+      {
+        "name": "packages",
+        "type": "directory"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "size": 3944
+      },
+      {
+        "name": "samples",
+        "type": "directory"
+      },
+      {
+        "name": "scripts",
+        "type": "directory"
+      },
+      {
+        "name": "worker",
+        "type": "directory"
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps": [
+      {
+        "name": "server",
+        "type": "directory"
+      },
+      {
+        "name": "web",
+        "type": "directory"
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\server": [
+      {
+        "name": "package.json",
+        "type": "file",
+        "size": 528
+      },
+      {
+        "name": "src",
+        "type": "directory"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "size": 249
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\server\\src": [
+      {
+        "name": "bot_template",
+        "type": "directory"
+      },
+      {
+        "name": "config.ts",
+        "type": "file",
+        "size": 2985
+      },
+      {
+        "name": "index.ts",
+        "type": "file",
+        "size": 4709
+      },
+      {
+        "name": "orchestrator.ts",
+        "type": "file",
+        "size": 2626
+      },
+      {
+        "name": "runner.ts",
+        "type": "file",
+        "size": 1327
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\server\\src\\bot_template": [
+      {
+        "name": "bot_api.h",
+        "type": "file",
+        "size": 2296
+      },
+      {
+        "name": "example.cpp",
+        "type": "file",
+        "size": 997
+      },
+      {
+        "name": "harness.cpp",
+        "type": "file",
+        "size": 5159
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\web": [
+      {
+        "name": "index.html",
+        "type": "file",
+        "size": 323
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "size": 540
+      },
+      {
+        "name": "src",
+        "type": "directory"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "size": 300
+      },
+      {
+        "name": "vite.config.ts",
+        "type": "file",
+        "size": 276
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\web\\src": [
+      {
+        "name": "App.vue",
+        "type": "file",
+        "size": 6004
+      },
+      {
+        "name": "components",
+        "type": "directory"
+      },
+      {
+        "name": "main.ts",
+        "type": "file",
+        "size": 201
+      },
+      {
+        "name": "store",
+        "type": "directory"
+      },
+      {
+        "name": "style.css",
+        "type": "file",
+        "size": 237
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\web\\src\\components": [
+      {
+        "name": "Board.vue",
+        "type": "file",
+        "size": 4436
+      },
+      {
+        "name": "BotDocModal.vue",
+        "type": "file",
+        "size": 3248
+      },
+      {
+        "name": "BotPanel.vue",
+        "type": "file",
+        "size": 12243
+      },
+      {
+        "name": "GameRules.vue",
+        "type": "file",
+        "size": 1715
+      },
+      {
+        "name": "Modal.vue",
+        "type": "file",
+        "size": 1998
+      },
+      {
+        "name": "StartScreen.vue",
+        "type": "file",
+        "size": 2253
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\apps\\web\\src\\store": [
+      {
+        "name": "game.ts",
+        "type": "file",
+        "size": 4386
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\packages": [
+      {
+        "name": "engine",
+        "type": "directory"
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\packages\\engine": [
+      {
+        "name": "package.json",
+        "type": "file",
+        "size": 408
+      },
+      {
+        "name": "src",
+        "type": "directory"
+      },
+      {
+        "name": "test",
+        "type": "directory"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "size": 275
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\packages\\engine\\src": [
+      {
+        "name": "engine.ts",
+        "type": "file",
+        "size": 8838
+      },
+      {
+        "name": "index.ts",
+        "type": "file",
+        "size": 59
+      },
+      {
+        "name": "types.ts",
+        "type": "file",
+        "size": 2166
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\packages\\engine\\test": [
+      {
+        "name": "engine.test.ts",
+        "type": "file",
+        "size": 2629
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\samples": [
+      {
+        "name": "greedy.cpp",
+        "type": "file",
+        "size": 610
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\scripts": [
+      {
+        "name": "e2e-workspace.sh",
+        "type": "file",
+        "size": 1175
+      },
+      {
+        "name": "probe-bad.cpp",
+        "type": "file",
+        "size": 205
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\worker": [
+      {
+        "name": "sandbox",
+        "type": "directory"
+      }
+    ],
+    "D:\\GitProjects\\block-chess\\worker\\sandbox": [
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "size": 386
+      }
+    ],
+    "D:\\GitProjects\\hello-git": [
+      {
+        "name": "hello.py",
+        "type": "file",
+        "size": 37
+      },
+      {
+        "name": "test222.txt",
+        "type": "file",
+        "size": 0
+      }
+    ]
+  }
+}

@@ -1,116 +1,151 @@
 from pathlib import Path
-from langchain_core.tools import tool
 import shutil
 
+from langchain_core.tools import tool
 
-@tool
-def list_files(folder_path: str) -> list[str]:
-    """查看指定文件夹当前这一层的文件和子文件夹。"""
-
-    folder = Path(folder_path)
-
-    # 文件夹不存在
-    if not folder.exists():
-        return [f"错误：文件夹不存在：{folder_path}"]
-
-    # 路径不是文件夹
-    if not folder.is_dir():
-        return [f"错误：这不是一个文件夹：{folder_path}"]
-
-    items = []
-
-    # 只查看当前这一层
-    # 不自动进入子文件夹
-    for item in folder.iterdir():
-
-        if item.is_file():
-            items.append(
-                f"[文件] {item.name} | 路径：{item}"
-            )
-
-        elif item.is_dir():
-            items.append(
-                f"[文件夹] {item.name} | 路径：{item}"
-            )
-
-    # 文件夹为空
-    if not items:
-        return ["这个文件夹是空的。"]
-
-    return items
+from directorytree import scan_directory
 
 
 @tool
-def read_file(file_path: str) -> str:
-    """读取指定文本文件的内容。"""
+def list_files(folder_path: str):
+    """
+    查看指定文件夹当前这一层的文件和文件夹。
+    不自动进入子文件夹。
+    """
 
-    file_path = Path(file_path)
+    path = Path(folder_path)
 
-    # 文件不存在
-    if not file_path.exists():
-        return f"错误：文件不存在：{file_path}"
+    if not path.exists():
+        return "文件夹不存在。"
 
-    # 不是文件
-    if not file_path.is_file():
-        return f"错误：这不是一个文件：{file_path}"
+    if not path.is_dir():
+        return "指定路径不是文件夹。"
+
+    try:
+
+        items = sorted(
+            path.iterdir(),
+            key=lambda x: (
+                x.is_file(),
+                x.name.lower()
+            )
+        )
+
+        result = []
+
+        for item in items:
+
+            if item.is_dir():
+
+                if item.name in {
+                    ".git",
+                    ".vscode",
+                    "__pycache__"
+                }:
+                    continue
+
+                result.append(
+                    f"[文件夹] {item.name}"
+                )
+
+            else:
+
+                result.append(
+                    f"[文件] {item.name}"
+                )
+
+        if not result:
+            return "文件夹为空。"
+
+        return "\n".join(result)
+
+    except OSError as e:
+
+        return f"读取文件夹失败：{e}"
+
+
+@tool
+def read_file(file_path: str):
+    """
+    读取文本文件内容。
+    用于 Agent 内部分析。
+    """
+
+    path = Path(file_path)
+
+    if not path.exists():
+        return "文件不存在。"
+
+    if not path.is_file():
+        return "指定路径不是文件。"
 
     try:
 
         with open(
-            file_path,
+            path,
             "r",
             encoding="utf-8"
-        ) as file:
+        ) as f:
 
-            content = file.read()
-
-        return content
+            return f.read()
 
     except UnicodeDecodeError:
 
-        return (
-            f"错误：无法使用 UTF-8 读取文件：{file_path}。"
-            "这个文件可能不是 UTF-8 编码的文本文件。"
-        )
+        return "文件不是 UTF-8 文本文件，暂时无法读取。"
 
-    except Exception as e:
+    except OSError as e:
 
-        return f"读取文件时发生错误：{e}"
+        return f"读取文件失败：{e}"
 
 
 @tool
-def move_file(file_path: str, target_folder: str) -> str:
-    """将指定文件移动到目标文件夹。"""
+def move_file(
+    file_path: str,
+    target_folder: str
+):
+    """
+    将文件移动到指定文件夹。
+    只有用户明确确认后才能调用。
+    """
 
-    file_path = Path(file_path)
-    target_folder = Path(target_folder)
+    source = Path(file_path)
+    target = Path(target_folder)
 
-    # 源文件不存在
-    if not file_path.exists():
-        return f"错误：文件不存在：{file_path}"
+    if not source.exists():
+        return "源文件不存在。"
 
-    # 只能移动文件
-    if not file_path.is_file():
-        return f"错误：只能移动文件，不能移动文件夹：{file_path}"
-
-    # 创建目标文件夹
-    target_folder.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    # 目标路径
-    target_path = target_folder / file_path.name
+    if not source.is_file():
+        return "源路径不是文件。"
 
     try:
 
-        shutil.move(
-            str(file_path),
-            str(target_path)
+        target.mkdir(
+            parents=True,
+            exist_ok=True
         )
 
-        return f"文件已移动到：{target_path}"
+        destination = target / source.name
 
-    except Exception as e:
+        shutil.move(
+            str(source),
+            str(destination)
+        )
 
-        return f"移动文件时发生错误：{e}"
+        return (
+            f"文件已移动：{source.name} "
+            f"→ {target}"
+        )
+
+    except OSError as e:
+
+        return f"移动文件失败：{e}"
+
+
+@tool
+def directory_tree(folder_path: str):
+    """
+    检查指定文件夹的目录结构，
+    并利用历史记录判断哪些目录发生了变化。
+    """
+
+    return scan_directory(folder_path)
